@@ -411,7 +411,7 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
 
     # Languages
     # - Django
-    LANGUAGE_CODE = "vi-VN"
+    LANGUAGE_CODE = "en"
 
     # Careful! Languages should be ordered by priority, as this tuple is used to get
     # fallback/default languages throughout the app.
