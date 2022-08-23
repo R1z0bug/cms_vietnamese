@@ -411,13 +411,13 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
 
     # Languages
     # - Django
-    LANGUAGE_CODE = "en"
+    LANGUAGE_CODE = "vi-VN"
 
     # Careful! Languages should be ordered by priority, as this tuple is used to get
     # fallback/default languages throughout the app.
     # Use "en" as default as it is the language that is most likely to be spoken by any visitor
     # when their preferred language, whatever it is, is unavailable
-    LANGUAGES = (("en", _("English")), ("fr", _("French")))
+    LANGUAGES = (("en", _("English")), ("vi", _("Vietnamese")))
 
     # - Django CMS
     CMS_LANGUAGES = {
@@ -425,7 +425,7 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
             "public": True,
             "hide_untranslated": False,
             "redirect_on_fallback": False,
-            "fallbacks": ["en", "fr"],
+            "fallbacks": ["en", "vi"],
         },
         1: [
             {
@@ -433,14 +433,14 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
                 "code": "en",
                 "hide_untranslated": False,
                 "name": _("English"),
-                "fallbacks": ["fr"],
+                "fallbacks": ["vi"],
                 "redirect_on_fallback": False,
             },
             {
                 "public": True,
-                "code": "fr",
+                "code": "vi",
                 "hide_untranslated": False,
-                "name": _("French"),
+                "name": _("Vietnamese"),
                 "fallbacks": ["en"],
                 "redirect_on_fallback": False,
             },
